@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Experimental">
+  <title>Experiemental</title>
+  <style>
+  </style>
+  <script>
+  </script>
+</head>
+
+<body>
+  <h2>Experimental</h2>
+
+  <template>
+    <p>template element</p>
+  </template>
+
+  <picture>
+    <source srcset="placeholder.jpg" type="image/jpeg">
+    <img src="placeholder.jpg" alt="placeholder image">
+  </picture>
+
+  <audio controls>
+      <source src="example-audio.mp3" type="audio/mpeg">
+      audio element not supported.
+  </audio>
+
+  <video controls>
+      <source src="example-video.mp4" type="video/mp4">
+      video element not supported.
+  </video>
+
+  <canvas id="canvas">canvas element not supported.</canvas>
+
+  <script>
+      const c = document.getElementById("canvas");
+      const ctx = c.getContext("2d");
+      ctx.fillStyle = "lightgray";
+      ctx.fillRect(10, 10, 180, 80);
+      ctx.fillStyle = "black";
+      ctx.fillText("Canvas Element", 50, 60);
+  </script>
+</body>
